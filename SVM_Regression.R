@@ -88,6 +88,6 @@ tunedModelY <- predict(tunedModel, test_df)
 error = tunedModel$residuals
 # this value can be different on your computer
 # because the tune method  randomly shuffles the data
-tunedModelRMSE <- rmse(error)  # 2.219642  
+tunedModelRMSE <- rmse(error)
 
 plot(tunedModelY, test_df$medv)
